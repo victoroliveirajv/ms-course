@@ -1,10 +1,10 @@
 package com.victorjv.hr_payroll.entities;
 
-
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Worker implements Serializable {
+
 
     private Long id;
     private String name;
