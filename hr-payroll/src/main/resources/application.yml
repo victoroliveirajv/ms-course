@@ -9,3 +9,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+
+resilience4j.circuitbreaker:
+  instances:
+    myService:
+      timeoutDuration: 60000
+
+ribbon:
+  ReadTimeout: 20000 # Tempo limite para leitura (em milissegundos)
+  ConnectTimeout: 10000 # Tempo limite para conexão (em milissegundos)
