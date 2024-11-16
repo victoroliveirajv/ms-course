@@ -20,3 +20,6 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      httpclient:
+        connect-timeout: 5000  # Tempo de espera para conexao com o serviço.
+        response-timeout: 20000 # Tempo de espera da resposta do serviço.
