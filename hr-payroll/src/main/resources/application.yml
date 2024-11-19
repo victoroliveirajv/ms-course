@@ -11,3 +11,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+    leaseRenewalIntervalInSeconds: 30  # Intervalo de renovação em segundos
+    leaseExpirationDurationInSeconds: 90  # Duração de expiração em segundos

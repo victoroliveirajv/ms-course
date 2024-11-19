@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hr-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/victoroliveirajv/ms-course-configs
+
+server:
+  port: 8888
